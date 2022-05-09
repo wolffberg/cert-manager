@@ -96,6 +96,7 @@ The following table lists the configurable parameters of the cert-manager chart 
 | `serviceAccount.name` | Service account to be used. If not set and `serviceAccount.create` is `true`, a name is generated using the fullname template |  |
 | `serviceAccount.annotations` | Annotations to add to the service account |  |
 | `serviceAccount.automountServiceAccountToken` | Automount API credentials for the Service Account | `true` |
+| `shareProcessNamespace` | Share process namespace in the cert-manager pod | `false` |
 | `volumes` | Optional volumes for cert-manager | `[]` |
 | `volumeMounts` | Optional volume mounts for cert-manager | `[]` |
 | `resources` | CPU/memory resource requests/limits | `{}` |

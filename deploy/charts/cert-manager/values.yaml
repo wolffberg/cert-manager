@@ -135,6 +135,8 @@ volumeMounts: []
 
 podLabels: {}
 
+shareProcessNamespace: false
+
 # Optional annotations to add to the controller Service
 # serviceAnnotations: {}
 

@@ -49,6 +49,9 @@ spec:
       {{- end }}
     spec:
       serviceAccountName: {{ template "cert-manager.serviceAccountName" . }}
+      {{- with .Values.shareProcessNamespace }}
+      shareProcessNamespace: {{ . }}
+      {{- end }}
       {{- if hasKey .Values "automountServiceAccountToken" }}
       automountServiceAccountToken: {{ .Values.automountServiceAccountToken }}
       {{- end }}
